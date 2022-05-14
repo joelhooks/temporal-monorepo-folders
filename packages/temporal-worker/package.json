@@ -1,0 +1,18 @@
+{
+  "name": "temporal-worker",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "nodemon worker.ts --watch ./worker.ts --watch ../temporal-workflows",
+    "build": "tsc --build",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "temporal-workflows": "*",
+    "temporalio": "0.19.x",
+    "ts-node": "^10.4.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
